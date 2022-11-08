@@ -1,4 +1,4 @@
-package services.interfaces;
+package bagit.com.services.interfaces;
 
 
 import java.util.Set;

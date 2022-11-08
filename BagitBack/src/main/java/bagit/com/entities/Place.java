@@ -1,18 +1,23 @@
-package entities;
+package bagit.com.entities;
 
-import javax.persistence.Id;
+import org.hibernate.annotations.GeneratorType;
+
+import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
+@Entity
 public class Place {
 
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
     private int id;
     private String name;
     private String description;
     private String video;
     private String navigator;
-    private List<String> comments;
-
+    @ElementCollection
+    private List<String> comments = new ArrayList<>();
 
     public int getId() {
         return id;

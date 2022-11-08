@@ -1,12 +1,13 @@
-package services.serviceImplementation;
+package bagit.com.services.serviceImplementation;
 
 
-import Exceptions.ResourceNotFoundException;
-import entities.Place;
+import bagit.com.Exceptions.ResourceNotFoundException;
+import bagit.com.entities.Place;
+import bagit.com.services.interfaces.PlaceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import repositories.PlacesRepository;
-import services.interfaces.PlaceService;
+import bagit.com.repositories.PlacesRepository;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -37,11 +38,13 @@ public class PlaceServiceImplementation implements PlaceService {
     @Override
     public Place findPlaceByName(String name) {
 
-        if (placesRepository.findByName(name) == null) {
+        Place place = placesRepository.findByName(name);
+
+        if (place == null) {
             throw new ResourceNotFoundException("place not found in database");
         }
 
-        return placesRepository.findByName(name);
+        return place;
 
     }
 
@@ -129,7 +132,7 @@ public class PlaceServiceImplementation implements PlaceService {
             throw new ResourceNotFoundException("place not found in database");
         }
 
-        place.setName(navigator);
+        place.setNavigator(navigator);
 
         place = placesRepository.save(place);
 
@@ -154,4 +157,20 @@ public class PlaceServiceImplementation implements PlaceService {
         return true;
 
     }
+
+    public Boolean addComment(String place, String comment) {
+
+        Place place1 = placesRepository.findByName(place);
+
+        if (place == null) {
+            throw new ResourceNotFoundException("place not found in database");
+        }
+
+        place1.getComments().add(comment);
+
+        placesRepository.save(place1);
+
+        return true;
+    }
+
 }
