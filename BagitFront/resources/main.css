@@ -1,8 +1,23 @@
 
+/* comfortaa-regular - latin_cyrillic-ext_cyrillic */
+@font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 800;
+    src: url('/Users/ardakuly/Desktop/projects/projectsCv/Bagit/BagitFront/comfortaa-v40-latin_cyrillic-ext_cyrillic/comfortaa-v40-latin_cyrillic-ext_cyrillic-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('/Users/ardakuly/Desktop/projects/projectsCv/Bagit/BagitFront/comfortaa-v40-latin_cyrillic-ext_cyrillic/comfortaa-v40-latin_cyrillic-ext_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/Users/ardakuly/Desktop/projects/projectsCv/Bagit/BagitFront/comfortaa-v40-latin_cyrillic-ext_cyrillic/comfortaa-v40-latin_cyrillic-ext_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/Users/ardakuly/Desktop/projects/projectsCv/Bagit/BagitFront/comfortaa-v40-latin_cyrillic-ext_cyrillic/comfortaa-v40-latin_cyrillic-ext_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+         url('/Users/ardakuly/Desktop/projects/projectsCv/Bagit/BagitFront/comfortaa-v40-latin_cyrillic-ext_cyrillic/comfortaa-v40-latin_cyrillic-ext_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('/Users/ardakuly/Desktop/projects/projectsCv/Bagit/BagitFront/comfortaa-v40-latin_cyrillic-ext_cyrillic/comfortaa-v40-latin_cyrillic-ext_cyrillic-regular.svg#Comfortaa') format('svg'); /* Legacy iOS */
+  }
+
+
 html {
     font-size: 16px;
     background-color: white;
-    font-family:  sans;
+    font-family:  Comfortaa;
     color: rgba(160,174,192);
     height: 100vh;
     scroll-behavior: smooth;
@@ -53,7 +68,7 @@ a {
 }
 
 .header ul {
-    width: 20rem;
+    width: 29rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -67,11 +82,12 @@ a {
 .header a:hover {
 
     color: white;
+    transition: color 0.3s;
 
 }
   
 
-/*               Banner            */
+/* ----------------- Banner ---------------- */
 
 main {
     width: 100%;
@@ -186,6 +202,15 @@ main {
     margin: 10% auto;
 }
 
+.circle img:hover {
+
+    width: 100%;
+    margin: 0% auto;
+    height: auto;
+    transition: all 0.3s;
+
+}
+
 
 .circle-1 {
 
@@ -284,7 +309,7 @@ footer {
 .footer-contacts{
     margin-left: 2rem;
     display: flex;
-    width: 12rem;
+    width: 14rem;
     justify-content: space-around;
     align-items: center;
 }
