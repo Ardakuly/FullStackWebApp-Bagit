@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../../../comfortaa-v40-latin_cyrillic-ext_cyrillic/comfortaa-v40-latin_cyrillic-ext_cyrillic-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../../../comfortaa-v40-latin_cyrillic-ext_cyrillic/comfortaa-v40-latin_cyrillic-ext_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../../../comfortaa-v40-latin_cyrillic-ext_cyrillic/comfortaa-v40-latin_cyrillic-ext_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../../comfortaa-v40-latin_cyrillic-ext_cyrillic/comfortaa-v40-latin_cyrillic-ext_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+         url('../../../comfortaa-v40-latin_cyrillic-ext_cyrillic/comfortaa-v40-latin_cyrillic-ext_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../../../comfortaa-v40-latin_cyrillic-ext_cyrillic/comfortaa-v40-latin_cyrillic-ext_cyrillic-regular.svg#Comfortaa') format('svg'); /* Legacy iOS */
+  }
+
+
+html {
+
+    font-size: 16px;
+}
+
+#introduction {
+
+    height: 60vh;
+    width: 100vw;
+    background-color: #DDD0C8 ;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    font-family: "Comfortaa";
+
+    color: #323232;
+
+
+}
+
+#introduction p {
+
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    width: 90%;
+
+}
+
+#images {
+
+    height: 80%;
+    width: 40%;
+    position: relative;
+
+
+}
+
+#images #img1 {
+
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    left: 2%;
+    top: 10%;
+
+    z-index: 1;
+
+}
+
+
+#images #img2 {
+
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    left: 52%;
+    top: 50%;
+
+    z-index: 2;
+
+
+}
+
+#images #img1 img {
+
+    max-height: 100%;
+    max-width: 100%;
+
+    border-radius: 0.5rem solid white;
+    box-shadow: 1px 2px 3px 4px rgba(20,20,20,0.4);
+
+}
+
+#images #img2 img {
+
+    max-height: 100%;
+    max-width:100%;
+    border-radius: 0.5rem solid white;
+    box-shadow: 1px 2px 3px 4px rgba(20,20,20,0.4);
+
+}
+
+#information {
+
+    align-self: stretch;
+    padding-top: 6rem;
+    padding-right: 8rem;
+    width: 40%;
+
+}
+
+
+
+

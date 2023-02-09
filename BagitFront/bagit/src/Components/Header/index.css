@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../../../comfortaa-v40-latin_cyrillic-ext_cyrillic/comfortaa-v40-latin_cyrillic-ext_cyrillic-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../../../comfortaa-v40-latin_cyrillic-ext_cyrillic/comfortaa-v40-latin_cyrillic-ext_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../../../comfortaa-v40-latin_cyrillic-ext_cyrillic/comfortaa-v40-latin_cyrillic-ext_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../../comfortaa-v40-latin_cyrillic-ext_cyrillic/comfortaa-v40-latin_cyrillic-ext_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+         url('../../../comfortaa-v40-latin_cyrillic-ext_cyrillic/comfortaa-v40-latin_cyrillic-ext_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../../../comfortaa-v40-latin_cyrillic-ext_cyrillic/comfortaa-v40-latin_cyrillic-ext_cyrillic-regular.svg#Comfortaa') format('svg'); /* Legacy iOS */
+  }
+
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.header {
+    
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    font-family: 'Comfortaa';
+
+    position: sticky;
+    top: 0;
+    z-index: 3;
+
+    border-bottom: 0.1rem solid rgba(255, 255, 255, 0.4);
+
+    background-size: cover;
+
+    color: white;
+    
+}
+
+.header-bg {
+    background-image: none;
+    background-color: rgba(0, 0, 0, 1);
+    border-bottom: 0;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.header-new-color {
+
+    color: rgba(160,174,192);
+
+}
+
+header #logo {
+
+    height: 100%;
+    width: 10%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+header #logo img {
+
+    height: 3rem;
+    width: 3rem;
+    margin-left: 1rem;
+    border-radius: 0.5rem;
+
+}
+
+header #logo p {
+
+    font-size: 1.1rem;
+    margin-right: 0.4rem;
+
+}
+
+header nav {
+
+    height: 3rem;
+    width: 20%;
+    margin-right: 1rem;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+
+}
+
+header nav a {
+
+    color: white;
+    text-decoration: none;
+
+}
+
+.active:hover {
+
+    color:white;
+    transition: color 0.2s ease-in-out;
+
+}
+
+
+
+

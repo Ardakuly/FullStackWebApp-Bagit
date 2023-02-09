@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../../../comfortaa-v40-latin_cyrillic-ext_cyrillic/comfortaa-v40-latin_cyrillic-ext_cyrillic-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../../../comfortaa-v40-latin_cyrillic-ext_cyrillic/comfortaa-v40-latin_cyrillic-ext_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../../../comfortaa-v40-latin_cyrillic-ext_cyrillic/comfortaa-v40-latin_cyrillic-ext_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../../comfortaa-v40-latin_cyrillic-ext_cyrillic/comfortaa-v40-latin_cyrillic-ext_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+         url('../../../comfortaa-v40-latin_cyrillic-ext_cyrillic/comfortaa-v40-latin_cyrillic-ext_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../../../comfortaa-v40-latin_cyrillic-ext_cyrillic/comfortaa-v40-latin_cyrillic-ext_cyrillic-regular.svg#Comfortaa') format('svg'); /* Legacy iOS */
+  }
+
+
+#places {
+
+    height: 50vh;
+    width: 100vw;
+    background-color: #554A44;
+    font-family: "Comfortaa";
+    color: #DDD0C8;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#places-flex {
+
+    height: 60%;
+    width: 90%;
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none; 
+    border-radius: 4.8px;
+}
+
+#places-flex::-webkit-scrollbar { 
+    display: none; 
+  }
+
+#places h2 {
+
+    padding-top: 1rem;
+
+}

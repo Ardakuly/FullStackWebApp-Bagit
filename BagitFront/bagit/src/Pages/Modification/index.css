@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../../../comfortaa-v40-latin_cyrillic-ext_cyrillic/comfortaa-v40-latin_cyrillic-ext_cyrillic-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../../../comfortaa-v40-latin_cyrillic-ext_cyrillic/comfortaa-v40-latin_cyrillic-ext_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../../../comfortaa-v40-latin_cyrillic-ext_cyrillic/comfortaa-v40-latin_cyrillic-ext_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../../comfortaa-v40-latin_cyrillic-ext_cyrillic/comfortaa-v40-latin_cyrillic-ext_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+         url('../../../comfortaa-v40-latin_cyrillic-ext_cyrillic/comfortaa-v40-latin_cyrillic-ext_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../../../comfortaa-v40-latin_cyrillic-ext_cyrillic/comfortaa-v40-latin_cyrillic-ext_cyrillic-regular.svg#Comfortaa') format('svg'); /* Legacy iOS */
+  }
+
+
+.places {
+
+        background-color: #554A44;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        height: 100vh;
+        width: 100vw;
+
+        font-family: "Comfortaa";
+
+
+}
+
+.places-wrapper {
+
+    width: 100%;
+    height: 100%;
+    
+    
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem;
+    
+
+}
+
+.place {
+
+    height: 30%;
+    width: 20%;
+
+}
+
+.places-new {
+
+    height: 27%;
+    width: 20%;
+    background-color: transparent;
+    box-shadow: 1px 2px 2px 4px rgba(20,20,20,0.4);
+    border-radius: 0.4rem;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+
+    color: rgb(221, 208, 200);
+    text-decoration: none;
+    text-align: center;
+
+    font-size: 15rem;
+    text-align: center;
+
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.places-new:hover {
+
+    color: rgba(20,20,20,0.4);
+    background-color: rgba(20,20,20,0.4);
+
+}
